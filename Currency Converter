@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+int main() {
+float usd=120.28, inr=1.607, euro=142.84, pound= 157.95;
+int x;
+printf("*******CURRENCY CONVERTER*******\n");
+printf("\n**************MENU**************\n");
+printf("\nEnter your Choice:\n\n");
+printf("1. US Dollar to Nepalese Rupee.\n");
+printf("2. Indian Rupee to Nepalese Rupee.\n");
+printf("3. Euro to Nepalese Rupee.\n");
+printf("4. British Pound to Nepalese Rupee.\n");
+printf("5. Exit");
+printf("\n");
+scanf("%d",&x);
+while(x!=5) {
+switch (x) {
+    float d;
+case 1:
+    printf("\nEnter USD Amount : ");
+    scanf("%f",&d);
+    printf("\nUSD %f is equals to Nepalese %f rupees.\n", d, d*usd);
+    break ;
+    case 2:
+    printf("\nEnter Indian Amount: ");
+    scanf("%f",&d);
+    printf("\nIndian %f is equals to Nepalese %f rupees.\n", d, d*inr);
+    break ;
+    case 3:
+    printf("\nEnter EURO Amount : ");
+    scanf("%f",&d);
+    printf("\nEURO %f is equals to Nepalese %f rupees.\n", d, d*euro);
+    break ;
+    case 4:
+    printf("\nEnter British Pound Amount : ");
+    scanf("%f",&d);
+    printf("\nPound %f is equals to Nepalese %f rupees.\n", d, d*pound);
+    break ;
+    default:
+    printf("Invalid Choice");
+    }
+
+}
+    printf("\nProgram Ending..................\n");
+    printf("Exited Successfully.\n");
+return 0;
+}
