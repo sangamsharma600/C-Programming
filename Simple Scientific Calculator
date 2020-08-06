@@ -1,0 +1,84 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+void main() {
+
+int choice;
+float a,b;
+printf("***********CALCULATOR***********");
+printf("\n************MENU****************\n");
+printf("1. Addition\n");
+printf("2. Subtraction\n");
+printf("3. Multiplication\n");
+printf("4. Division\n");
+printf("5. Square Root\n");
+printf("6. Square\n");
+printf("7. Cube Root\n");
+printf("8. Cube\n");
+printf("0. Exit Program\n\n");
+printf("Choice: ");
+scanf("%d",&choice);
+if(choice==0) {
+    printf("Program Exiting.......");
+    exit(0);
+}
+    switch (choice) {
+    case 1:
+        printf("Enter First Number: ");
+        scanf("%f", &a);
+        printf("Enter Second Number: ");
+        scanf("%f", &b);
+        printf("The Addition of %.2f and %.2f is : %.2f", a,b,a+b);
+        break;
+    case 2:
+        printf("Enter First Number: ");
+        scanf("%f", &a);
+        printf("Enter Second Number: ");
+        scanf("%f", &b);
+        printf("The Subtraction of %.2f and %.2f is : %.2f", a,b,a-b);
+        break;
+    case 3:
+        printf("Enter First Number: ");
+        scanf("%f", &a);
+        printf("Enter Second Number: ");
+        scanf("%f", &b);
+        printf("The Multiplication of %.2f and %.2f is : %.2f", a,b, a*b);
+        break;
+    case 4:
+        printf("Enter First Number: ");
+        scanf("%f", &a);
+        printf("Enter Second Number: ");
+        scanf("%f", &b);
+        printf("The Division of %.2f and %.2f is : %.2f\n", a,b ,a/b);
+        break;
+    case 5:
+        printf("Enter a value: ");
+        scanf("%f",&a);
+        printf("The square root of %.2f is : %.2f",a, sqrt(a));
+        break;
+
+    case 6:
+        printf("Enter a value: ");
+        scanf("%f", &a);
+        printf("The square of %.2f is : %.2f", a, a*a);
+        break;
+    case 7:
+        printf("Enter a value: ");
+        scanf("%f",&a);
+        printf("The Cube Root of %.2f is %.2f", a, cbrt(a));
+        break;
+    case 8:
+        printf("Enter a value: ");
+        scanf("%f",&a);
+        printf("The Cube of %.2f is %.2f ",a , a*a*a);
+        break;
+    default:
+    printf("Invalid Choice!!!\n");
+    //printf("\nProgram Exiting.............");
+    //printf("\nExited Successfully");
+    }
+
+getch();
+
+}
